@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Home Page</title>
+  <style>
+      .mask {
+          height: 600px;
+          width: 100vw;
+          background: black;
+          overflow: hidden;
+          background: -webkit-linear-gradient(rgba(59, 30, 76, 0.8), rgba(156, 62, 142, 0.2)), url("https://wallpaperaccess.com/full/2965046.jpg");
+          background: linear-gradient(rgba(59, 30, 76, 0.8), rgba(156, 62, 142, 0.2)), url("https://wallpaperaccess.com/full/2965046.jpg"); /* The least supported option. */
+      }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+</head>
+
+<body>
+<header>
+  <div th:insert="fragments/header :: header"></div>
+
+  <div class="mask rgba-black-strong">
+    <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-md-10">
+          <h2 class="display-4 font-weight-bold text-white pt-5 mb-2">Get a better read on the world</h2>
+          <hr class="hr-light">
+          <h4 class="text-white my-4">"A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” (George R.R. Martin)</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+<main class="mt-5">
+  <div class="container">
+    <section id="best-features" class="text-center">
+      <h2 class="mb-5 font-weight-bold">Features of a Digital Library</h2>
+      <div class="row d-flex justify-content-center mb-4">
+        <div class="col-md-8">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-5">
+          <i class="fa fa-wifi fa-4x"></i>
+          <h4 class="my-4 font-weight-bold">No Physical Restrictions:</h4>
+          <p class="grey-text">One can access it from anywhere, even from the comfort of their homes. All that is required is a good Internet connection. That’s it!</p>
+        </div>
+        <div class="col-md-4 mb-1">
+          <i class="fa fa-search fa-4x "></i>
+          <h4 class="my-4 font-weight-bold">Easy-to-Use:</h4>
+          <p class="grey-text">All you have to do is search for the title or the author, and you’ll get your book in no time. </p>
+        </div>
+        <div class="col-md-4 mb-1">
+          <i class="fa fa-space-shuttle fa-4x"></i>
+          <h4 class="my-4 font-weight-bold">No Limitation of Space:</h4>
+          <p class="grey-text">DLs can store thousands of resources without facing any difficulties.</p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+</body>
+</html>
